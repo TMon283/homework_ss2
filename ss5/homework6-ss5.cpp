@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2, choice;
+    int num1, num2, i;
     float result;
     printf("Nhap so thu nhat: ");
     scanf("%d", &num1);
@@ -16,8 +16,8 @@ int main() {
         printf("4. Thuong 2 so\n");
         printf("5. Thoat\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &choice);
-        switch (choice) {
+        scanf("%d", &i);
+        switch (i) {
             case 1:
                 result = num1 + num2;
                 printf("Ket qua: %.0f\n", result);
@@ -44,7 +44,7 @@ int main() {
             default:
                 printf("Lua chon không hop le\n");
         }
-    } while (choice != 5);
+    } while (i != 5);
 
     return 0;
 }
