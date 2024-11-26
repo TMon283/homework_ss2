@@ -56,7 +56,6 @@ int main() {
                 printf("Lua chon không hop le\n");
         }
     } while (i != 5);
-
     return 0;
 }
 
