@@ -3,11 +3,6 @@
 int main() {
     int num1, num2, i;
     float result;
-    printf("Nhap so thu nhat: ");
-    scanf("%d", &num1);
-    printf("Nhap so thu hai: ");
-    scanf("%d", &num2);
-
     do {
         printf("\nCALCULATOR\n");
         printf("1. Tong 2 so\n");
@@ -19,18 +14,34 @@ int main() {
         scanf("%d", &i);
         switch (i) {
             case 1:
+            	printf("Nhap so thu nhat: ");
+    			scanf("%d", &num1);
+    			printf("Nhap so thu hai: ");
+   				scanf("%d", &num2);
                 result = num1 + num2;
                 printf("Ket qua: %.0f\n", result);
                 break;
             case 2:
+            	printf("Nhap so thu nhat: ");
+    			scanf("%d", &num1);
+    			printf("Nhap so thu hai: ");
+   				scanf("%d", &num2);
                 result = num1 - num2;
                 printf("Ket qua: %.0f\n", result);
                 break;
             case 3:
+            	printf("Nhap so thu nhat: ");
+    			scanf("%d", &num1);
+    			printf("Nhap so thu hai: ");
+   				scanf("%d", &num2);
                 result = num1 * num2;
                 printf("Ket qua: %.0f\n", result);
                 break;
             case 4:
+            	printf("Nhap so thu nhat: ");
+    			scanf("%d", &num1);
+    			printf("Nhap so thu hai: ");
+   				scanf("%d", &num2);
                 if (num2 != 0) {
                     result = (float)num1 / num2;
                     printf("Ket qua: %.2f\n", result);

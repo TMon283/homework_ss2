@@ -8,7 +8,7 @@ int main(){
 		printf("%d * %d = %d\n", num, i, tich);
 		if (i == 10 and num < 9){
 			printf("\n");
-			i = 1;
+			i = 0;
 			num++;
 		}
 	}
