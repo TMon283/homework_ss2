@@ -9,6 +9,5 @@ int main(){
 		num1 = num2;
 		num2 = num3;
 	}
-	printf("\n");
 	return 0;
 }
