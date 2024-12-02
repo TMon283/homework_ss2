@@ -22,12 +22,12 @@ int main(){
 			array[addIndex] = addNumber;
 			currentLength = addNumber + 1;
 		}else{
-			for(int i = currentLength; i > addNumber; i--){
+			for(int i = currentLength + 1; i >= addNumber; i--){
 				array[i] = array[i - 1];
 			}
 			array[addIndex] = addNumber;
 			currentLength++;
-			printf("Mang sau khi them phan tu la ");
+			printf("Mang sau khi them phan tu la\n");
 			for(int i = 0; i < currentLength; i++){
 				printf("%d ", array[i]);
 			}
