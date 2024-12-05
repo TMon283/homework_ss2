@@ -30,7 +30,11 @@ int main(){
 				break;
 			case 2: // In ra gia tri cac phan tu trong mang
 				for(int i = 0; i < length; i++){
-					printf("%d ", arr[i]);
+					if(i == length - 1){
+						printf("arr[%d] = %d", i, arr[i]);
+					}else{
+						printf("arr[%d] = %d, ", i, arr[i]);
+					}
 				}
 				printf("\n");
 				break;
