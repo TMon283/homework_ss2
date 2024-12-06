@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 	int arr[50];
-	int choice, length, primeNumber, deleteIndex, sum, min, max;
+	int choice, length, deleteIndex, sum, min, max;
 	int findIndex = -1;
 	do{
 		printf("\tMENU\n");
@@ -90,13 +90,21 @@ int main(){
 			case 8: // Tim kiem phan tu trong mang
 				printf("Nhap phan tu ban muon tim: ");
 				scanf("%d", &findIndex);
+				int notFind;
 				for(int i = 0; i < length; i++){
 					if(arr[i] == findIndex){
 						findIndex = i;
+						notFind = 1;
 						break;
+					}else{
+						notFind = -1;
 					}
 				}
-				printf("Phan tu ton tai trong mang tai arr[%d]\n", findIndex);
+				if(notFind == -1){
+					printf("Phan tu khong ton tai trong mang\n");
+				}else{
+					printf("Phan tu ton tai trong mang tai arr[%d]\n", findIndex);
+				}	
 				break;
 			case 9: // In ra toan bo so nguyen to trong mang
 				for(int i = 0; i < length; i++){
