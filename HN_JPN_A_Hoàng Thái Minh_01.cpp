@@ -59,7 +59,19 @@ int main(){
 				printf("Tong tat ca cac phan tu trong mang la %d\n", sum);
 				break;
 			case 5: // Them mot phan tu vao cuoi mang (nguoi dung nhap)
-				
+				printf("Nhap phan tu ban muon them vao mang: ");
+				scanf("%d", &addIndex);
+				arr[length] = addIndex;
+				length++;
+				for(int i = 0; i < length; i++){
+					if(i == length - 1){
+						printf("arr[%d] = %d", i, arr[i]);
+					}else{
+						printf("arr[%d] = %d, ", i, arr[i]);
+					}
+				}
+				printf("\n");
+				break;
 			case 6: // Xoa phan tu tai vi tri cu the
 				printf("Moi ban nhap vi tri phan tu muon xoa: ");
 				scanf("%d", &deleteIndex);
